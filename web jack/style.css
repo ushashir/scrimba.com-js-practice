@@ -1,0 +1,15 @@
+body {
+    font-family: 'Trebuchet', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    background-color: grey;
+}
+
+h1 {
+    color: goldenrod;
+}
+
+#message-el {
+
+}
+button {
+    background-color: khaki;
+}
