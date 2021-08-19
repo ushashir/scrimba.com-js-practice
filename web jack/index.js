@@ -16,11 +16,8 @@ let player = {
     chips: 21
 }
 
-
 let playerEl = document.getElementById("player-el");
 playerEl.textContent = player.name + ": " + "N" +  player.chips;
-
-
 
 function getRandomCard(){
    let output = Math.floor(Math.random()*14) + 1;
@@ -83,4 +80,83 @@ let course = {
     tags: ["General Intro","html", "css", "JavaScript"]
 }
 
-console.log(course.tags[0]); //html
+// console.log(course.tags[0]); //html
+
+let ushahemba = {
+    name: "Usha",
+    age: 21,
+    country: "Nigeria" 
+}
+
+function logData() {
+    logDataP.textContent = ushahemba.name + " " + "is " + ushahemba.age + " " + "old " + "and lives in " + ushahemba.country
+}
+
+let logDataP = document.getElementById("log-data");
+// console.log(logDataP);
+
+// let age = 15;
+// if(age < 6){
+//     console.log("free");
+// } else if (age > 5 && age < 18){
+//     console.log("child discount")
+// } else if (age > 16 && age < 27){
+//     console.log("student discount")
+// } else if (age > 26 && age < 67){
+//     console.log("full price")
+// } else {
+//     console.log("Senior citizen discount")
+// }
+
+// let largeCountries = ["China", "India", "USA", "Indonensia", "Pakistan"]
+
+// for(let i = 0; i < largeCountries.length; i++){
+//     console.log( "- " + largeCountries[i]  + " " ); 
+// }
+
+let largeCountries = ["Tuvalu", "India", "USA", "Indonensia", "Monaco"]
+let removeTuvalu = largeCountries.shift();
+let removeMonaco = largeCountries.pop();
+let chinaFirst = largeCountries.unshift("China")
+let addChina = largeCountries.push("Pakistan");
+// console.log(largeCountries);
+
+let dayOfMonth = 13;
+let weekday = "Friday";
+// if (dayOfMonth === 13 && weekday === "Friday"){
+//     console.log("not a happy day")
+// }
+
+// random display of names
+let hands = ["rock", "paper", "scissor"]
+function randomDisplay (){
+   let randomIndex = Math.floor(Math.random() * 3);
+   return hands[randomIndex];
+}
+console.log(randomDisplay())
+
+let fruits = ["apple", "orange", "apple", "apple", "orange"]
+let appleShelf = document.getElementById("apple-shelf");
+let orangeShelf = document.getElementById("orange-shelf");
+
+
+
+function arrangeFruits () {
+    for (let i = 0; i < fruits.length; i++) {
+        if (fruits[i] === "orange") {
+            orangeShelf.textContent += "orange" + " "; 
+        } else if (fruits[i] === "apple") {
+            appleShelf.textContent += "apple" + " ";
+        }       
+    }
+}
+arrangeFruits()
+
+
+
+
+
+
+
+
+
